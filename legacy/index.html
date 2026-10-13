@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bento Lite - Frozen | basil</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Announcement bar -->
+<div class="adv" aria-label="Announcements">
+  <div class="adv-track">
+    <span class="dot"></span><span>Free Shipping | 10 Day Return*</span>
+    <span class="dot"></span><span>🔥 Buy 2 get 5% OFF 🔥</span>
+    <span class="dot"></span><span>Frozen Drop 🩵</span>
+    <span class="dot"></span><span>Free Shipping | 10 Day Return*</span>
+    <span class="dot"></span><span>Frozen Drop 🩵</span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+<!-- Nav -->
+<header class="nav">
+  <a class="nav-left" href="#"><img src="assets/f3a9f.svg" alt="" width="24" height="18"><span>Shop all</span></a>
+  <a class="nav-logo" href="#"><img src="assets/146e4.png" alt="basil" width="106" height="36"></a>
+  <div class="nav-right">
+    <button aria-label="Search"><img src="assets/78ab3.svg" alt="" width="20" height="20"></button>
+    <button aria-label="Account"><img src="assets/26896.svg" alt="" width="20" height="20"></button>
+    <button aria-label="Cart" class="cart-btn" id="cartBtn"><img src="assets/3175b.svg" alt="" width="20" height="20"><span class="cart-count" id="cartCount" hidden>0</span></button>
+  </div>
+</header>
+
+<!-- Product hero -->
+<main>
+<section class="hero">
+  <div class="thumbs" id="thumbs" role="tablist" aria-label="Product images">
+    <button class="active" data-src="assets/main-raw1.png"><img src="assets/thumb-raw1.png" alt="Frozen bento lite, open"></button>
+    <button data-src="assets/thumb-raw2.png"><img src="assets/thumb-raw2.png" alt="Product view 2"></button>
+    <button data-src="assets/thumb-raw3.png"><img src="assets/thumb-raw3.png" alt="Product view 3"></button>
+    <button data-src="assets/thumb-raw4.png"><img src="assets/thumb-raw4.png" alt="Product view 4"></button>
+    <button data-src="assets/thumb-raw5.png"><img src="assets/thumb-raw5.png" alt="Product view 5"></button>
+    <button data-src="assets/thumb-raw6.png"><img src="assets/thumb-raw6.png" alt="Product view 6"></button>
+    <div class="thumbs-fade"></div>
+  </div>
+
+  <div class="gallery-main"><img id="mainImg" src="assets/main-raw1.png" alt="Bento Lite Frozen"></div>
+
+  <div class="buybox">
+    <div class="bb-head">
+      <div class="pills">
+        <span class="pill rating"><img src="assets/99042.svg" alt="" width="13" height="13">4.5</span>
+        <span class="pill new">New Arrival 🔥</span>
+      </div>
+      <h1>Bento Lite - Frozen</h1>
+      <p class="sub">3 Compartment Stainless Steel Lunchbox with Plastic Lid</p>
+      <div class="price-row">
+        <span class="price">₹ 1,899</span>
+        <span class="mrp">MRP₹ 3,200</span>
+        <span class="off">41% off</span>
+      </div>
+      <p class="tax">Inc. all taxes</p>
+    </div>
+
+    <div class="vibe">
+      <p>Choose your Vibe : <b id="vibeName">Winter Whirl</b></p>
+      <div class="swatches" id="swatches">
+        <button class="swatch active" data-name="Winter Whirl" aria-label="Winter Whirl"><img src="assets/73a74.png" alt=""></button>
+        <button class="swatch" data-name="Frozen Magic" aria-label="Frozen Magic"><img src="assets/1788d.png" alt=""></button>
+      </div>
+    </div>
+
+    <div class="buy-row">
+      <div class="qty">
+        <button id="qMinus" aria-label="Decrease quantity">-</button>
+        <span id="qVal">2</span>
+        <button id="qPlus" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-btn" id="addBtn">2 boxes · ₹3,798</button>
+    </div>
+
+    <div class="bundle">
+      <div class="bundle-top">
+        <h2>Pack the morning, not just the box</h2>
+        <div class="progress"><span id="essText">2 / 3 essentials</span><div class="bar"><i id="essBar"></i></div></div>
+      </div>
+      <div class="tabs3" id="tabs3">
+        <button class="active"><b>Playschool</b><small>Hot food first</small></button>
+        <button><b>Primary</b><small>Box + bottle</small></button>
+        <button><b>Two kids</b><small>A box each</small></button>
+      </div>
+      <div class="cards3" id="cards3">
+        <div class="mini selected" role="button" tabindex="0" aria-pressed="true" data-id="box" data-name="Frozen Magic lunchbox">
+          <div class="mini-img"><img class="cover z1" src="assets/acca8.png" alt=""><img class="chk" src="assets/5f154.svg" alt="" width="24" height="24"><span class="addtag">Add</span></div>
+          <p class="mini-name">Frozen Magic lunchbox ×2</p>
+          <div class="mini-price"><span><b>₹3,798</b><s>MRP₹ 6,400</s></span><em>41%off</em></div>
+        </div>
+        <div class="mini selected" role="button" tabindex="0" aria-pressed="true" data-id="bottle" data-name="HydraPop 380ml" data-price="1099" data-mrp="2000">
+          <div class="mini-img"><img class="cover z2" src="assets/be654.png" alt=""><img class="chk" src="assets/5f154.svg" alt="" width="24" height="24"><span class="addtag">Add</span></div>
+          <p class="mini-name">HydraPop 380ml</p>
+          <div class="mini-price"><span><b>₹ 1,099</b><s>MRP₹ 2,000</s></span><em>45%off</em></div>
+        </div>
+        <div class="mini" role="button" tabindex="0" aria-pressed="false" data-id="dip" data-name="Pickle Dip" data-price="149" data-mrp="249">
+          <div class="mini-img"><img class="fill" src="assets/c08c1.png" alt=""><img class="chk" src="assets/5f154.svg" alt="" width="24" height="24"><span class="addtag">Add</span></div>
+          <p class="mini-name">Pickle Dip</p>
+          <div class="mini-price"><span><b class="orange">₹ 149</b><s>MRP₹ 249</s></span><em>40%off</em></div>
+        </div>
+      </div>
+      <p class="bundle-note" id="bundleNote" role="status" aria-live="polite" hidden></p>
+      <div class="bundle-total">
+        <div>
+          <div class="big" id="bundleTotal">₹4,897</div>
+          <div class="save"><b>You save <span id="bundleSave">₹3,503</span></b> <small><s>vs.MRP</s> <strong id="bundleMrp">₹8,400</strong></small></div>
+        </div>
+        <span class="unlock" id="unlockChip"><img src="assets/857a2.svg" alt="" width="18" height="18"><span id="unlockText">Add 1 more → Unlock Extra 10% OFF</span></span>
+      </div>
+      <button class="buy-now" id="buyNow">Buy Now · ₹4,897</button>
+      <ul class="trust">
+        <li><img src="assets/c9111.svg" alt="" width="33" height="13" class="fda"><span>FDA approved</span></li>
+        <li><img src="assets/59584.png" alt="" width="24" height="24"><span>Free shipping</span></li>
+        <li><img src="assets/550e4.png" alt="" width="24" height="24"><span>6 month warranty</span></li>
+        <li><img src="assets/c8f1e.png" alt="" width="24" height="24"><span>Easy 10 Day Return</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- Product features -->
+<section class="features">
+  <h2 class="sec-title">Product Features</h2>
+  <div class="feat-grid">
+    <article><img src="assets/bccc9.png" alt=""><h3>For Every Princess</h3><p>From Elsa to Olaf, there's a bestie print for every bag.</p></article>
+    <article><img src="assets/fde7b.png" alt=""><h3>Sealed Frozen-Tight</h3><p>Slides around their bag all day and books stay dry.</p></article>
+    <article><img src="assets/86e28.png" alt=""><h3>Detachable Silicone</h3><p>The silicone pops right out for a spotless wash.</p></article>
+    <article><img src="assets/c046d.png" alt=""><h3>Frozen Tough</h3><p>Pure food-grade 304 stainless steel, no nasties!</p></article>
+  </div>
+</section>
+
+<!-- Certifications -->
+<section class="certs">
+  <img class="wave wave-t" src="assets/00acc.svg" alt="" aria-hidden="true">
+  <img class="wave wave-b" src="assets/00acc.svg" alt="" aria-hidden="true">
+  <h2 class="sec-title">Tested. Certified. Trusted.</h2>
+  <p class="sec-sub">100% Free from Harmful Toxins</p>
+  <div class="cert-row">
+    <figure><div><img src="assets/bc014.png" alt=""></div><figcaption>CPC Certified</figcaption></figure>
+    <figure><div><img src="assets/35b66.png" alt=""></div><figcaption>IP Patented</figcaption></figure>
+    <figure><div><img src="assets/98dae.png" alt=""></div><figcaption>FDA Approved</figcaption></figure>
+    <figure><div><img src="assets/5d78a.png" alt=""></div><figcaption>100% Leak Proof</figcaption></figure>
+    <figure><div><img src="assets/e7971.png" alt=""></div><figcaption>Frozen Edition</figcaption></figure>
+    <figure><div><img src="assets/ba8ec.png" alt=""></div><figcaption>304-RustFree<br>Stainless Steel</figcaption></figure>
+  </div>
+</section>
+
+<!-- Happy families -->
+<section class="happy">
+  <h2 class="sec-title">2 Lakh+ Happy Families</h2>
+  <div class="stars-row"><span class="stars big"></span><span>(4.9)</span></div>
+  <div class="review-strip">
+    <div class="review-track">
+      <article class="rcard"><img src="assets/2af9f.png" alt=""><div><div class="rc-top"><span class="stars sm"></span><span class="verified">VERIFIED</span></div><h4>Mitali</h4><p>Absolutely love the Frozen Bento! The designs are so beautiful and my daughter feels like a little princess every time she carries it to school.</p></div></article>
+      <article class="rcard"><img src="assets/5c9fc.png" alt=""><div><div class="rc-top"><span class="stars sm"></span><span class="verified">VERIFIED</span></div><h4>Rahul</h4><p>The colours and detailing are so beautifully done! What I love most is how practical it is - the lunchbox is completely leakproof, so there are no messy spills in her school bag.</p></div></article>
+      <article class="rcard"><img src="assets/2af9f.png" alt=""><div><div class="rc-top"><span class="stars sm"></span><span class="verified">VERIFIED</span></div><h4>Mitali</h4><p>Absolutely love the Frozen Bento! The designs are so beautiful and my daughter feels like a little princess every time she carries it to school.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- Designed with intent -->
+<section class="intent">
+  <div class="pattern pattern-t"></div>
+  <div class="intent-band"><img src="assets/intent-raw1.png" alt="Designed with intent: materials you can trust blindly, parent-approved design, tested for little hands, opens without help"></div>
+  <div class="pattern pattern-b"></div>
+</section>
+
+<!-- Specs tabs -->
+<section class="specs">
+  <div class="spec-tabs" id="specTabs" role="tablist">
+    <button class="active" data-tab="dim">Dimensions</button>
+    <button data-tab="mat">Materials</button>
+    <button data-tab="care">Care Instructions</button>
+    <button data-tab="more">More Information</button>
+  </div>
+  <div class="spec-card">
+    <div class="spec-panel active" id="tab-dim">
+      <div class="dim-img"><img src="assets/main-raw1.png" alt="Bento Lite, 23.5 cm by 17.5 cm"><span class="dim-w">23.5 cm</span><span class="dim-h">17.5 cm</span></div>
+      <dl class="spec-list">
+        <h3>Specifications</h3>
+        <dt>Product Dimensions</dt><dd>23.5cm x 17.5cm x 4cm</dd>
+        <dt>Weight</dt><dd>460 Grams</dd>
+        <dt>Capacity</dt><dd>780 ml</dd>
+        <dt>Net Quantity</dt><dd>1 N</dd>
+      </dl>
+    </div>
+    <div class="spec-panel" id="tab-mat"><dl class="spec-list solo"><h3>Materials</h3><dt>Box</dt><dd>304 food-grade stainless steel</dd><dt>Lid</dt><dd>Food-safe plastic with detachable silicone seal</dd></dl></div>
+    <div class="spec-panel" id="tab-care"><dl class="spec-list solo"><h3>Care Instructions</h3><dt>Washing</dt><dd>Pop out the silicone seal and hand wash with mild soap</dd><dt>Avoid</dt><dd>Microwave and open flame</dd></dl></div>
+    <div class="spec-panel" id="tab-more"><dl class="spec-list solo"><h3>More Information</h3><dt>Warranty</dt><dd>6 months</dd><dt>Returns</dt><dd>Easy 10 day return</dd></dl></div>
+  </div>
+</section>
+
+<!-- Customer reviews -->
+<section class="reviews">
+  <div class="rev-card">
+    <div class="rev-left">
+      <h2>Customer Reviews</h2>
+      <div class="dist" id="dist"></div>
+      <div class="avg"><span class="stars avgstars"></span><span>4.50 out of 5</span><span class="based">Based on 2 reviews</span></div>
+      <button class="write">Write a review</button>
+      <div class="photos">
+        <p>Customer photos &amp; videos</p>
+        <div><img src="assets/fe426.png" alt=""><img src="assets/f8c23.png" alt=""><img src="assets/95ff2.png" alt=""><img src="assets/92a6f.png" alt=""><img src="assets/15e21.png" alt=""></div>
+      </div>
+    </div>
+    <div class="rev-right">
+      <div class="rev-bar"><span class="sort">Most Recent <img src="assets/a795a.svg" alt="" width="18" height="18"></span><button class="viewall">VIEW ALL</button></div>
+      <div class="rev-cols">
+        <article class="rev"><div class="rev-meta"><span class="stars sm4"></span><time>6 days ago</time></div><div class="rev-user"><i><img src="assets/18eb9.svg" alt="" width="24" height="24"></i><span>Sahana Uday Shankar</span></div><p>Product is good.. but it’s a bit overpriced.</p><div class="reply"><p><span>&gt;&gt;</span> <b>yourbasil</b> replied:</p><p>Thank you for your feedback, Sahana. We're glad you find the product good and appreciate your input on pricing. We'll consider this for future improvements.</p></div></article>
+        <article class="rev"><div class="rev-meta"><span class="stars sm4"></span><time>6 days ago</time></div><div class="rev-user"><i><img src="assets/18eb9.svg" alt="" width="24" height="24"></i><span>Sahana Uday Shankar</span></div><p>Product is good.. but it’s a bit overpriced.</p><div class="reply"><p><span>&gt;&gt;</span> <b>yourbasil</b> replied:</p><p>Thank you for your feedback, Sahana. We're glad you find the product good and appreciate your input on pricing. We'll consider this for future improvements.</p></div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <h2 class="sec-title">Questions You May Have</h2>
+  <p class="sec-sub caps">We've tried to answer them all</p>
+  <div class="faq-list">
+    <details><summary>Is the Frozen print officially licensed?<img src="assets/07bf8.svg" alt="" width="24" height="24"></summary><p>Yes. This lunchbox is official Disney Frozen merchandise, made under licence.</p></details>
+    <details><summary>Is it easy for a child to open and close?<img src="assets/07bf8.svg" alt="" width="24" height="24"></summary><p>The latches are designed and tested for little hands, so most kids can open the box without help.</p></details>
+    <details><summary>Will the food mix together inside the compartments?<img src="assets/07bf8.svg" alt="" width="24" height="24"></summary><p>No. The three compartments keep dry and wet foods separate.</p></details>
+    <details><summary>Can I pack hot Indian food in it?<img src="assets/07bf8.svg" alt="" width="24" height="24"></summary><p>Yes. The 304 stainless steel tray handles warm food well. Let very hot food cool a minute before sealing the lid.</p></details>
+    <details><summary>Is it actually leakproof enough to put in a school bag?<img src="assets/07bf8.svg" alt="" width="24" height="24"></summary><p>Yes. The silicone seal locks the lid tight, so the box stays sealed inside a school bag.</p></details>
+  </div>
+</section>
+
+<!-- Explore more -->
+<section class="explore">
+  <h2 class="sec-title">Explore More</h2>
+  <div class="prod-grid">
+    <article class="pcard"><div class="pimg"><img src="assets/c07b7.png" alt=""></div><div class="pbody"><span class="pill rate"><img src="assets/2bc4c.svg" alt="" width="9" height="9">4.8</span><h3>Bento Quad</h3><p>4 Compartment Stainless steel Lunchbox with Plastic lid - Mushroom Trail</p><div class="pp"><b>₹ 1999</b><s>MRP₹ 3500</s><em>43% off</em></div><button class="atc" data-id="bento-quad" data-name="Bento Quad" data-price="1999">Add to Cart</button></div></article>
+    <article class="pcard"><div class="pimg"><img src="assets/327ba.png" alt=""></div><div class="pbody"><span class="pill rate"><img src="assets/2bc4c.svg" alt="" width="9" height="9">4.7</span><h3>HydraPop 600ml</h3><p>Insulated Stainless steel Sipper with Loop Handle- Pixie Dash</p><div class="pp"><b>₹ 1299</b><s>MRP₹ 2400</s><em>46% off</em></div><button class="atc" data-id="hydrapop600" data-name="HydraPop 600ml" data-price="1299">Add to Cart</button></div></article>
+    <article class="pcard"><div class="pimg"><img src="assets/5f774.png" alt=""></div><div class="pbody"><div class="pillrow"><span class="pill rate"><img src="assets/2bc4c.svg" alt="" width="9" height="9">4.9</span><span class="pill launch">New Launch</span></div><h3>Bento Ace</h3><p>2 Compartment Stainless Steel Lunchbox with Plastic Lid - Wiggly Woof</p><div class="pp"><b>₹ 1599</b><s>MRP₹ 2500</s><em>36% off</em></div><button class="atc" data-id="bento-ace" data-name="Bento Ace" data-price="1599">Add to Cart</button></div></article>
+    <article class="pcard"><div class="pimg"><img src="assets/dbf85.png" alt=""></div><div class="pbody"><div class="pillrow"><span class="pill rate"><img src="assets/2bc4c.svg" alt="" width="9" height="9">4.7</span><span class="pill launch">New Launch</span></div><h3>HydraFizz 800ml</h3><p>Insulated Stainless steel Sipper with Carry Handle - Classic Plum</p><div class="pp"><b>₹ 1399</b><s>MRP₹ 2600</s><em>46% off</em></div><button class="atc" data-id="hydrafizz" data-name="HydraFizz 800ml" data-price="1399">Add to Cart</button></div></article>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="f-grid">
+    <div class="f-col f-brand">
+      <img src="assets/51652.png" alt="basil" width="90" height="31">
+      <p class="tag">Designed for Kids. Approved by Families.</p>
+      <hr class="dash">
+      <h4>Get In The Loop</h4>
+      <p>We're always cooking up something fun - get first access to new drops &amp; insider deals!</p>
+      <form class="news" onsubmit="return false"><input type="email" placeholder="Enter your email" aria-label="Email"><button aria-label="Subscribe"><img src="assets/9c8af.svg" alt="" width="22" height="21"></button></form>
+    </div>
+    <div class="vdiv"></div>
+    <div class="f-col f-links">
+      <div class="lists">
+        <div><h4>More</h4><ul><li><a href="#">Shop All</a></li><li><a href="#">Stainless Steel Bento</a></li><li><a href="#">Insulated Food Jar</a></li><li><a href="#">School Backpack</a></li><li><a href="#">Water Bottle</a></li></ul></div>
+        <div><h4>Help</h4><ul><li><a href="#">Contact Us</a></li><li><a href="#">Shipping Policy</a></li><li><a href="#">Returns Policy</a></li><li><a href="#">Warranty Policy</a></li></ul></div>
+      </div>
+      <hr class="dash">
+      <div class="find"><h4>Find us here!</h4>
+        <div class="social"><a href="#" aria-label="Instagram"><img src="assets/2117f.svg" alt="" width="19" height="19"></a><a href="#" aria-label="Facebook"><img src="assets/bc0ef.svg" alt="" width="21" height="21"></a><a href="#" aria-label="YouTube"><img src="assets/b5775.svg" alt="" width="22" height="17"></a></div>
+      </div>
+    </div>
+    <div class="vdiv"></div>
+    <div class="f-col f-market">
+      <h4>Marketed By</h4>
+      <address>SY NO.26/1, K NO.1056,1037/1/1042/1, INDIQUBE AURA,IBIS Hotel, Hongasandra village, Next to Oxford engineering college, Garvebhavi Palya, Bengaluru, Bengaluru Urban, Karnataka, 560068<br>CIN U51909KA2022PTC164084</address>
+      <hr class="dash">
+      <h4>Now Available At:</h4>
+      <div class="retail"><img src="assets/6448d.png" alt="Amazon"><img src="assets/9ae19.png" alt="Blinkit"><img src="assets/735e3.png" alt="Flipkart"><img src="assets/6af6a.png" alt="FirstCry"><img src="assets/cc508.png" alt="Myntra"><img src="assets/adb7d.png" alt="Ozi"></div>
+    </div>
+  </div>
+  <hr class="dash wide">
+  <div class="f-bottom">
+    <span>© Copyright, yourbasil 2026</span>
+    <nav><a href="#">Refund policy</a><a href="#">Privacy policy</a><a href="#">Terms of service</a><a href="#">Contact information</a></nav>
+    <span>Made with ❤️ by Boco</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="cart.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

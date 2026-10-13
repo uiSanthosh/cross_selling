@@ -1,0 +1,22 @@
+/* Tailwind v4 without Preflight: the existing visual language (app/legacy.css) owns the base reset,
+   so adding Tailwind changes nothing visually. Utilities sit above it for new code. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "./legacy.css" layer(components);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "tw-animate-css";
+
+/* Brand tokens (values live in :root in legacy.css) exposed to Tailwind: bg-lime-btn, text-ink, font-sans ... */
+@theme inline {
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-cream: var(--cream);
+  --color-lime: var(--lime);
+  --color-lime-btn: var(--lime-btn);
+  --color-brand-blue: var(--blue);
+  --color-brand-orange: var(--orange);
+  --color-brand-yellow: var(--yellow);
+  --color-sky: var(--sky);
+  --color-butter: var(--butter);
+  --font-sans: var(--font);
+}
